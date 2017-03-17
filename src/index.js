@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
-
-exports.gitBranch = (branch) => {
-  const regEx = /ref: refs\/heads\/([^\n]+)/;
+const regEx = /ref: refs\/heads\/([^\n]+)/;
+const gitBranch = function(branch) {
+  console.log(branch);
   fs.readFile(`${path.join(process.cwd(), '.git/HEAD')}`, 'utf8', (err, data) => {
     //if error in getting
     if (err) throw err;
@@ -30,6 +32,6 @@ exports.gitBranch = (branch) => {
       }
     }
   });
-};
-// gitBranch('ignore');
-module.exports = gitBranch();
+}
+
+module.exports = gitBranch;
