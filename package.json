@@ -1,0 +1,13 @@
+{
+  "name": "build-ignore",
+  "version": "1.0.0",
+  "description": "A post-checkout hook script that generates a .gitignore based on branch name for when different .gitingores are needed",
+  "main": "index.js",
+  "scripts": {
+    "run": "node build-ignore.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["git", "git-branch-ignore", "gitignore", "branch", "branch-ignore", "ignore"],
+  "author": "David Conner <david@david-conner.com>",
+  "license": "ISC"
+}
