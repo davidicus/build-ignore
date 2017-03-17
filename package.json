@@ -1,6 +1,6 @@
 {
   "name": "build-ignore",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A post-checkout hook script that generates a .gitignore based on branch name for when different .gitignores are needed",
   "main": "index.js",
   "scripts": {

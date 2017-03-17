@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const regEx = /ref: refs\/heads\/([^\n]+)/;
-const gitBranch = function(branch = publish) {
+const gitBranch = function(branch = 'publish') {
   console.log(branch);
   fs.readFile(`${path.join(process.cwd(), '.git/HEAD')}`, 'utf8', (err, data) => {
     //if error in getting
@@ -16,7 +16,6 @@ const gitBranch = function(branch = publish) {
         fs.readFile(path.join(process.cwd(), `gitignores/gitignore_${branch}.txt`), 'utf8', (err, data) => {
           fs.writeFile('./.gitignore', data, (err) => {
             if (err) throw err;
-            console.log('Something is went wrong!!');
           });
           console.log('New .gitignore created: ', data);
         });
@@ -29,6 +28,8 @@ const gitBranch = function(branch = publish) {
           console.log('DATA', data);
         });
       }
+    } else {
+      console.log('Something is went wrong!!');
     }
   });
 }
