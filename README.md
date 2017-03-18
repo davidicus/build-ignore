@@ -4,9 +4,13 @@ A post-checkout hook script that generates a .gitignore based on branch name for
 
 ## Install
 ```
-yarn add build-ignore
+yarn add build-ignore -D
 ```
+or
 
+```
+npm i build-ignore -D
+```
 ---
 ## Use
 In order to use build-ignore you will need to create a gitignores directory with a text file using the name of your branch specific gitignore as well as your regular(master) gitingore.
@@ -15,4 +19,4 @@ In order to use build-ignore you will need to create a gitignores directory with
   |_ gitingore_master.txt
   |_ gitingore_specialBranch.txt
 ```
-From your terminal run `./node_modules/.bin/build-ignore "specialBranch"` with the special branch name as the argument. 
+From your terminal run `./node_modules/.bin/build-ignore "specialBranch"` with the special branch name as the argument.
