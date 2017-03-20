@@ -16,7 +16,7 @@ const gitBranch = function() {
           fs.writeFile('./.gitignore', data, (err) => {
             if (err) throw err;
           });
-          console.log(`New .gitignore created on ${match[1]}: `, data);
+          console.log(`New .gitignore created on ${match[1]}: \n`, data);
         });
       } else {
         fs.readFile(path.join(process.cwd(),'gitignores/gitignore_master.txt'), 'utf8', (err, data) => {
@@ -24,7 +24,7 @@ const gitBranch = function() {
             if (err) throw err;
             console.log('It\'s saved!');
           });
-          console.log(`New .gitignore created from master: `, data);
+          console.log(`New .gitignore created from master:  \n`, data);
         });
       }
     } else {
