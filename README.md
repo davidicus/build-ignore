@@ -22,7 +22,7 @@ In order to use build-ignore you will need to create a gitignores directory with
 From your terminal run `./node_modules/.bin/build-ignore`. It will check the current branch and look for it in the gitignores folder. If one is not found it will create one using the gitingore_master.txt file. Must add .gitignore to each gitignore text file in order to avoid having to mess with tracking of actual .gitignore.
 
 
-#Git hooks
+## Git hooks
 Use as a post-checkout git hook to have build-ignore run automatically when changing branches by adding the following to the `.git/hooks` directory:
 
 ``` bash
