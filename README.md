@@ -1,9 +1,9 @@
 # Build-Ignore
 
-Generate branch specific .gitignore.
----
-
 [![Build Status](https://travis-ci.org/davidicus/build-ignore.svg?branch=master)](https://travis-ci.org/davidicus/build-ignore)
+
+Generate branch specific .gitignore.
+
 
 ## Install
 ```
