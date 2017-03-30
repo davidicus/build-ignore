@@ -4,9 +4,6 @@
   "description": "A post-checkout hook script that generates branch specific .gitignore files",
   "main": "src/index.js",
   "repository": "https://github.com/davidicus/build-ignore.git",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "build-ignore": "./bin/cli.js"
   },
