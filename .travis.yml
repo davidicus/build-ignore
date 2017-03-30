@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: david@david-conner.com
+  api_key:
+    secure: EEIAITPkFgQTfro3t3XaM7Au4zFad+b/P6z6V23OuWkv9N2mMTEISisxmB8cNoT6kbyLTLY2A0ksTv2X8rJtqzdOMm2csxqOa9DGBtQy+9go1cdI845qA56FhiQnUnhSsnXEmPlMllyMU0qR44IEWNBG24/at4wKa9P4mGrj80ZAM4OlrVyjXUZbpyK9QXNuxVHWvZ2BxnTa2kWbr+FLaptMVp+WGMfvevmsOyt/lOCmr6FR9JrubjwSlugyblTxljBvSvnNhlhBPL4mFGdh3kZBxSjg8SmItIlI0hpD/l2Z9P6yxOoXdqfS8IUuGm7eK+mXJ+ugmjyw7B4ptO+uBr9V2r6bPBh1YBQqCoq144LfN3wmQUbtTKZnF4zpidDUOn82UH0gxFizROzfdyBkNPPcfpIFkS6hTFkCLVjsjaW7XQCGxOPkqLIPqLiV5iXjpa7k/HDdZs+0sb4269p73f91nsAzGZPiNicQOjtPvFCY2EpkuyRhgJp84aA/VZ4lrQ2BDDMxtjKVmeJHPDTrLCbB0kFV5Jw53k1cCYM1DFqmXwDLKmiALbL5EuT2f5utY6gO/6+YAg6Z72DPTw4X62vSH8BsThoov1svYo5QbbntwoJZGS5wKmMwxn3l5UoQKxVbuSb8G13+ptsr7qpGS+VMdAWINTmDXeL5jp0JOOA=
+  on:
+    tags: true
+    repo: davidicus/build-ignore
