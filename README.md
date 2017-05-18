@@ -1,6 +1,7 @@
 # Build-Ignore
 
 [![Build Status](https://travis-ci.org/davidicus/build-ignore.svg?branch=master)](https://travis-ci.org/davidicus/build-ignore)
+[![npm](https://img.shields.io/npm/dt/build-ignore.svg)]()
 
 Generate branch specific .gitignore.
 
