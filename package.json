@@ -7,6 +7,9 @@
   "bin": {
     "build-ignore": "./bin/cli.js"
   },
+  "scripts": {
+    "test": "eslint ./src/index.js"
+  },
   "keywords": [
     "git",
     "git-branch-ignore",
@@ -16,5 +19,8 @@
     "ignore"
   ],
   "author": "David Conner <david@david-conner.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
 }
